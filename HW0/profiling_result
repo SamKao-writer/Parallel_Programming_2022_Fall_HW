@@ -1,0 +1,29 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+101.36      0.76     0.76                             main
+  0.00      0.76     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.76     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+
+			Call graph
+
+
+granularity: each sample hit covers 2 byte(s) for 1.32% of 0.76 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.76    0.00                 main [1]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [13]
+[8]      0.0    0.00    0.00       1         _GLOBAL__sub_I_main [8]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [9]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [8]
+[9]      0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [9]
+-----------------------------------------------
+
+Index by function name
+
+   [8] _GLOBAL__sub_I_main     [9] __static_initialization_and_destruction_0(int, int) [1] main
